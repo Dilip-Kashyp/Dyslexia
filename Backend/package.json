@@ -9,9 +9,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "env": "^0.0.2",
     "express": "^4.19.2",
+    "mysql": "^2.18.1",
     "nodemon": "^3.1.2"
   }
 }
