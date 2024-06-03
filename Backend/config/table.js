@@ -1,6 +1,6 @@
 const connection = require('./DB_connect') //importing the database
 //creating a table using nodejs
-const createUser = `CREATE TABLE IF NOT EXISTS users (
+const createUser = `CREATE TABLE IF NOT EXISTS user (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
@@ -19,5 +19,4 @@ const createUser = `CREATE TABLE IF NOT EXISTS users (
     }
     //if no error then this block gets executed
     console.log('Table "users" created successfully');
-    connection.end();
   });

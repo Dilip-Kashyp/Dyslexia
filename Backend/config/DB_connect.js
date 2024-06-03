@@ -15,6 +15,7 @@ connection.connect((err) => {
     console.error('Error connecting to the database:', err.stack);
     return;
   }
+  console.log("Database connected.")
   console.log('Connected to the database as ID', connection.threadId);
 });
 
